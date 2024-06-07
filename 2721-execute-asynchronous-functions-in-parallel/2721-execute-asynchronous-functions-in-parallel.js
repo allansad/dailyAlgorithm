@@ -13,11 +13,11 @@ var promiseAll = function(functions) {
                 count++;
 
                 if (count === functions.length) {
-                resolve(resultArray);
+                    resolve(resultArray);
                 }
             }).catch(err => reject(err));
         }
-    });
+    })
 };
 
 /**
